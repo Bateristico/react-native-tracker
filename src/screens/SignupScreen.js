@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Input, Button } from 'react-native-elements';
-import Spacer from '../components/Spacer.js';
+import Spacer from '../components/Spacer';
 
 const SignupScreen = ({ navigation }) => {
   return (
@@ -9,9 +9,13 @@ const SignupScreen = ({ navigation }) => {
       <Spacer>
         <Text h3>Sign Up for Tracker</Text>
       </Spacer>
-
-      <Input label="Email" />
-      <Input label="Password" />
+      <Spacer>
+        <Input label="Email" />
+      </Spacer>
+      <Spacer>
+        <Input label="Password" />
+      </Spacer>
+      <Spacer></Spacer>
       <Button title="Sign Up" />
     </>
   );
