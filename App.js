@@ -1,5 +1,6 @@
 import React from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+// import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 
@@ -24,5 +25,9 @@ const switchNavigator = createSwitchNavigator({
     Account: AccountScreen
   })
 });
+
+// export default function App() {
+//   return <NavigationContainer>{/* Rest of your app code */}</NavigationContainer>;
+// }
 
 export default createAppContainer(switchNavigator);
